@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: aws-with-java-sdk-and-spring
+  servlet:
+    multipart:
+      enabled: true
+      file-size-threshold: 2MB
+      max-file-size: 5MB
+      max-request-size: 10MB
+
+cloud:
+  aws:
+    credentials:
+      accessKey: PUT_YOUR_ACCESS_KEY
+      secretKey: PUT_YOUR_SECRET_KEY
+      instance-profile: true
+      use-default-aws-credentials-chain: true
+    region:
+      static: eu-west-3
+    stack:
+      auto: false
